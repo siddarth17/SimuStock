@@ -13,3 +13,5 @@ Developed a dynamic stock market simulation web application (originally called J
 - **Backend Logic:** Developed backend logic using Java Servlets to handle requests such as stock searches, transactions, and user account updates dynamically.
 - **Transaction Handling:** Implemented features for users to buy and sell stocks within the confines of simulated capital, including real-time updates of stock positions and portfolio values. Integrated complex SQL operations to ensure accurate tracking and updating of user portfolios and transaction records.
 - **Performance Optimization:** Ensured optimal application performance through efficient query design and AJAX-based page updates for a seamless user experience.
+
+https://github.com/siddarth17/SimuStock/assets/111927633/d84fda07-0b4f-4c7a-87a2-76d55313f4df
