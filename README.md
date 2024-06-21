@@ -3,7 +3,7 @@
 **Technologies Used:** Java, HTML5, CSS3, AJAX, MySQL, Tomcat Server, Finnhub API  
 **Framework:** Java Servlets  
 
-Developed a dynamic stock market simulation web application that allows users to engage in real-time stock trading activities. The application integrates the Finnhub Stock API for up-to-date financial data and is built using Java Servlets on the backend with a MySQL database for persistent storage of user credentials, portfolio data, and favorite stocks.
+Developed a dynamic stock market simulation web application (originally called JoesStocks) that allows users to engage in real-time stock trading activities. The application integrates the Finnhub Stock API for up-to-date financial data and is built using Java Servlets on the backend with a MySQL database for persistent storage of user credentials, portfolio data, and favorite stocks.
 
 **Key Responsibilities:**
 - **API Integration:** Implemented seamless integration with the Finnhub API to fetch and display real-time stock data including prices, market caps, IPO dates, and company statistics.
