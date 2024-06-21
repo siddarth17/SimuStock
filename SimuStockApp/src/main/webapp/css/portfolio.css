@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+header {
+  background-color: #6b46c1;
+  color: white;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#portfolio-section {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#portfolio-section h1 {
+  margin-bottom: 10px;
+}
+
+#account-summary {
+  margin-bottom: 20px;
+}
+
+#account-summary p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.stock-card {
+  background-color: #f9f9f9;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  border: 2px solid #ccc;
+}
+
+.stock-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ccc;
+}
+
+.stock-title {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ccc;
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  margin-top: -20px;
+}
+
+.stock-title h3 {
+  margin: 0;
+  font-weight: normal;
+  margin-left: 30px;
+}
+
+.stock-card .stock-info {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+  width: calc(100% + 60px);
+  margin-left: -30px;
+}
+
+.stock-card .stock-info div {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 10px;
+  padding-left: 90px;
+}
+
+.stock-info p {
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+
+.stock-card .stock-transaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.quantity-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.quantity-input label {
+  margin-right: 5px;
+}
+
+.quantity-input input {
+  padding: 5px;
+  width: 40px;
+}
+
+.transaction-form .radio-buttons {
+  margin-bottom: 10px;
+}
+
+.transaction-form .submit-btn {
+  padding: 5px 15px;
+  background-color: #f0f0f0;
+  color: black;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.change-value {
+  display: inline-block;
+}
+
+.change-value.positive {
+  color: green;
+}
+
+.change-value.negative {
+  color: red;
+}
+
+.change-value.positive,
+.change-value.positive i { 
+  color: green;
+}
+
+.change-value.negative,
+.change-value.negative i { 
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .stock-card .stock-info {
+    flex-direction: column;
+  }
+
+  .stock-card .stock-transaction {
+    flex-direction: column;
+  }
+
+  .transaction-form .radio-buttons {
+    margin-bottom: 10px;
+  }
+
+  .transaction-form .submit-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
